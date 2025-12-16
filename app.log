@@ -1,0 +1,729 @@
+2025-12-16 22:25:59,620 - __main__ - INFO - Starting Real-Time Trading Analytics Platform...
+2025-12-16 22:25:59,721 - backend.storage - INFO - Database initialized successfully
+2025-12-16 22:25:59,721 - __main__ - INFO - Database initialized
+2025-12-16 22:25:59,725 - __main__ - INFO - Data ingestion started
+2025-12-16 22:25:59,726 - __main__ - INFO - Starting Flask server on http://localhost:5000
+2025-12-16 22:25:59,731 - backend.data_ingestion - INFO - Connecting to Binance WebSocket: wss://stream.binance.com:9443/stream?streams=btcusdt@trade/ethusdt@trade
+2025-12-16 22:25:59,914 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.14:5000
+2025-12-16 22:25:59,916 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 22:26:01,102 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:26:59,770 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:27:00,854 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:00] "GET / HTTP/1.1" 200 -
+2025-12-16 22:27:04,933 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:04] "GET /socket.io/?EIO=4&transport=polling&t=Pie61AC HTTP/1.1" 200 -
+2025-12-16 22:27:04,952 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:04] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:27:05,086 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:05] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:05,093 - __main__ - INFO - Client connected
+2025-12-16 22:27:05,096 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:05] "POST /socket.io/?EIO=4&transport=polling&t=Pie61Cm&sid=g8MopBdsiQHNrru9AAAA HTTP/1.1" 200 -
+2025-12-16 22:27:05,104 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:05] "GET /socket.io/?EIO=4&transport=polling&t=Pie61Cs&sid=g8MopBdsiQHNrru9AAAA HTTP/1.1" 200 -
+2025-12-16 22:27:05,167 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:05] "GET /socket.io/?EIO=4&transport=polling&t=Pie61Dy&sid=g8MopBdsiQHNrru9AAAA HTTP/1.1" 200 -
+2025-12-16 22:27:05,192 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-16 22:27:05,205 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:05] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:05,253 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:05] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:05,754 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:27:09,976 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:09] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:10,037 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:10] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:10,205 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:10] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:12,839 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:12] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:12,907 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:12] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:12,951 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:12] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:14,797 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:14] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:14,892 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:14] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:14,930 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:14] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:14,976 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:14] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:15,079 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:15] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:15,128 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:15] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:20,020 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:20] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:20,148 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:20] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:20,190 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:20] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:24,953 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:24] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:25,081 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:25] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:25,150 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:25] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:29,949 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:29] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:30,029 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:30] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:30,074 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:30] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:34,948 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:34] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:35,012 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:35] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:35,056 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:35] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:39,948 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:39] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:40,075 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:40] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:40,137 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:40] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:44,970 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:44] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:45,047 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:45] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:45,106 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:45] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:50,451 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:50] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:50,579 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:50] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:50,618 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:50] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:27:55,738 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:55] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:55,782 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:55] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:27:55,810 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:27:55] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:00,697 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:00] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:00,759 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:00] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:00,794 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:00] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:05,702 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:05] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:05,745 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:05] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:05,779 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:28:05,787 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:05] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:10,681 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:10] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:10,707 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:10] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:10,726 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:10] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:11,864 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:28:15,725 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:15] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:15,810 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:15] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:15,853 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:15] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:20,748 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:20] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:20,818 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:20] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:20,850 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:20] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:25,711 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:25] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:25,768 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:25] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:25,792 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:25] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:30,766 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:30] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:30,813 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:30] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:31,177 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:31] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:35,708 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:35] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:35,751 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:35] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:35,818 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:35] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:40,700 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:40] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:40,732 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:40] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:40,793 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:40] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:45,690 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:45] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:45,799 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:45] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:45,842 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:45] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:50,693 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:50] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:50,819 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:50] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:50,857 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:50] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:28:56,807 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:56,859 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:28:56,915 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:28:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:29:08,688 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:29:15,042 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:29:49,091 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:49] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:29:49,203 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:49] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:29:49,229 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:49] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:29:49,943 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:49] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:29:49,979 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:49] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:29:50,006 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:50] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:29:54,861 - app - ERROR - Exception on /api/alerts [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\trading-analytics-platform\app.py", line 147, in create_alert
+    threshold=float(data.get('threshold')),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2025-12-16 22:29:54,880 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:54] "[35m[1mPOST /api/alerts HTTP/1.1[0m" 500 -
+2025-12-16 22:29:54,967 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:54] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:29:55,052 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:55] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:29:55,266 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:29:55] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:00,017 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:00] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:00,086 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:00] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:00,149 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:00] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:00,702 - app - ERROR - Exception on /api/alerts [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\trading-analytics-platform\app.py", line 147, in create_alert
+    threshold=float(data.get('threshold')),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2025-12-16 22:30:00,713 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:00] "[35m[1mPOST /api/alerts HTTP/1.1[0m" 500 -
+2025-12-16 22:30:04,960 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:04] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:05,021 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:05] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:05,050 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:05] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:09,930 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:09] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:09,955 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:09] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:09,976 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:09] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:11,852 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:30:14,940 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:14] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:14,992 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:14] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:15,040 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:15] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:17,474 - backend.alert_manager - INFO - Alert created: 1b5220e1-6540-4e5d-a855-ea5f674765b3 - ETHUSDT price > 99.0
+2025-12-16 22:30:17,477 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:17] "POST /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:30:17,521 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:17] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:30:18,089 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:30:19,858 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.66, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:23.424000'}
+2025-12-16 22:30:19,970 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:19] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:20,052 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:20] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:20,068 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.66, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:23.519000'}
+2025-12-16 22:30:20,140 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:20] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:20,289 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.66, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:23.696000'}
+2025-12-16 22:30:20,513 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:23.879000'}
+2025-12-16 22:30:20,876 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:24.097000'}
+2025-12-16 22:30:21,408 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:24.445000'}
+2025-12-16 22:30:21,559 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:24.455000'}
+2025-12-16 22:30:24,965 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:24] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:25,083 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:25] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:25,108 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:25] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:29,934 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:29] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:30,001 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:30] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:30,025 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:30] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:31,000 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:31,135 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:31,273 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:31,448 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:31,603 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:31,743 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:31,868 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:31,985 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:32,035 - app - ERROR - Exception on /api/alerts [POST]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\trading-analytics-platform\app.py", line 147, in create_alert
+    threshold=float(data.get('threshold')),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+2025-12-16 22:30:32,049 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:32] "[35m[1mPOST /api/alerts HTTP/1.1[0m" 500 -
+2025-12-16 22:30:32,151 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:32,295 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:32,429 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:32,572 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:32,713 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:32,858 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:33,013 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:33,149 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:33,249 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:33,358 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.611000'}
+2025-12-16 22:30:33,504 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:33,655 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:33,806 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:33,937 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,042 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,155 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,270 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,391 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,532 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,685 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,837 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:34,958 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:34] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:34,997 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:34] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:35,003 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,020 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:35] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:35,113 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,209 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,304 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,401 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,527 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,675 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,820 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:35,982 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:36,139 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:36,289 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:36,439 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:36,586 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:36,726 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:36,882 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:37,103 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:37,297 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:37,407 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:37,535 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:37,693 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:37,805 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:37,918 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:38,035 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:38,172 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:38,325 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:38,478 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:38,603 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.67, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:38,777 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.68, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:38,947 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.68, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:39,072 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.68, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:39,199 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.68, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:39,336 - backend.alert_manager - INFO - Alert created: 98f5eafc-739f-443a-904b-b24edff404e4 - ETHUSDT price > 1e+16
+2025-12-16 22:30:39,338 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:39] "POST /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:30:39,342 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.68, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:39,362 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:39] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:30:39,500 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.68, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:39,604 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.7, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:39,717 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.71, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.614000'}
+2025-12-16 22:30:39,865 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.72, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:39,963 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:39] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:40,040 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:40] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:40,048 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.72, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:40,100 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:40] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:40,194 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.74, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:40,315 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.75, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:40,432 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.76, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:40,539 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.76, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:40,652 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.77, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:40,792 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.78, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:40,910 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.78, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:41,006 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.81, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.615000'}
+2025-12-16 22:30:41,130 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:41,279 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:41,460 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:41,593 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:41,691 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:41,788 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:41,894 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:41,995 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,110 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,216 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,324 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,439 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,548 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,741 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,866 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.86, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:42,982 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,114 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,217 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,323 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,423 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,522 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,636 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,743 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.87, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:43,850 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.89, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.617000'}
+2025-12-16 22:30:45,377 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:45] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:47,628 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:47] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:48,398 - __main__ - INFO - Client disconnected
+2025-12-16 22:30:48,415 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:48] "GET /socket.io/?EIO=4&transport=websocket&sid=g8MopBdsiQHNrru9AAAA HTTP/1.1" 200 -
+2025-12-16 22:30:48,451 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:48] "GET / HTTP/1.1" 200 -
+2025-12-16 22:30:48,461 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:48] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:49,278 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:49] "GET /socket.io/?EIO=4&transport=polling&t=Pie6txs HTTP/1.1" 200 -
+2025-12-16 22:30:49,285 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:49] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:30:49,299 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:49] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:49,336 - __main__ - INFO - Client connected
+2025-12-16 22:30:49,345 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:49] "POST /socket.io/?EIO=4&transport=polling&t=Pie6tyR&sid=YfeSn90WPSpfUB8NAAAC HTTP/1.1" 200 -
+2025-12-16 22:30:49,380 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:49] "GET /socket.io/?EIO=4&transport=polling&t=Pie6tyV&sid=YfeSn90WPSpfUB8NAAAC HTTP/1.1" 200 -
+2025-12-16 22:30:49,536 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:49] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:49,560 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:49] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:52,100 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:52] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:52,177 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:52] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:52,240 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:52] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:54,941 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:54] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:55,040 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:55] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:55,077 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:55] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:55,482 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:55] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:55,545 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:55] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:55,583 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:55] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:56,749 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:56,851 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:56,895 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:57,066 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:57] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:57,105 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:57] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:57,127 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:30:57,547 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:57,711 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:57,863 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,017 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,123 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,231 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,373 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,532 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,685 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,830 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:58,986 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:59,160 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:59,310 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:30:59,339 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:59] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:30:59,420 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:30:59] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:01,142 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:01] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:01,203 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:01,375 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:01,518 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:01,677 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:01,857 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:01,972 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,074 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,177 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,300 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,447 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,617 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,738 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,842 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:02,959 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,134 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,286 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,435 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,547 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,656 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,761 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,872 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:03,981 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:04,126 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:04,254 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:04,360 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:04,376 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:04] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:04,425 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:04] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:04,454 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:04] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:04,547 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:04,662 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:04,783 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:04,942 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:05,338 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:05,481 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:05,631 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:05,781 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:05,944 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:06,091 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.9, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:06,243 - backend.data_ingestion - INFO - Alert triggered: {'alert_id': '1b5220e1-6540-4e5d-a855-ea5f674765b3', 'message': 'ETHUSDT price > 99.0', 'symbol': 'ETHUSDT', 'metric': 'price', 'value': 2937.91, 'threshold': 99.0, 'timestamp': '2025-12-16T22:30:25.855000'}
+2025-12-16 22:31:06,371 - backend.alert_manager - INFO - Alert removed: 1b5220e1-6540-4e5d-a855-ea5f674765b3
+2025-12-16 22:31:06,391 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:06] "DELETE /api/alerts/1b5220e1-6540-4e5d-a855-ea5f674765b3 HTTP/1.1" 200 -
+2025-12-16 22:31:06,439 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:06] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:31:07,667 - backend.alert_manager - INFO - Alert removed: 98f5eafc-739f-443a-904b-b24edff404e4
+2025-12-16 22:31:07,670 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:07] "DELETE /api/alerts/98f5eafc-739f-443a-904b-b24edff404e4 HTTP/1.1" 200 -
+2025-12-16 22:31:07,692 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:07] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:31:09,298 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:09] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:09,323 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:09] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:09,345 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:09] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:14,291 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:14] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:14,317 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:14] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:14,339 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:14] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:17,531 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:31:19,301 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:19] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:19,353 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:19] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:19,406 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:19] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:22,032 - backend.alert_manager - INFO - Alert created: fd398eb1-673d-4671-8695-a710b43dbca7 - BTCUSDT price > 1000000000.0
+2025-12-16 22:31:22,033 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:22] "POST /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:31:22,046 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:22] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:31:23,659 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:31:24,333 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:24] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:24,444 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:24] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:24,486 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:24] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:29,310 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:29] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:29,390 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:29] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:29,441 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:29] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:34,315 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:34] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:34,419 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:34] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:34,465 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:34] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:37,047 - backend.alert_manager - INFO - Alert removed: fd398eb1-673d-4671-8695-a710b43dbca7
+2025-12-16 22:31:37,059 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:37] "DELETE /api/alerts/fd398eb1-673d-4671-8695-a710b43dbca7 HTTP/1.1" 200 -
+2025-12-16 22:31:37,085 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:37] "GET /api/alerts HTTP/1.1" 200 -
+2025-12-16 22:31:39,354 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:39] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:39,580 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:39] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:39,639 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:39] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:44,313 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:44] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:44,434 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:44] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:44,502 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:44] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:49,337 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:49] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:49,426 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:49] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:49,488 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:49] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:54,315 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:54] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:54,401 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:54] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:54,451 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:54] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:31:59,297 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:59] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:59,337 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:59] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:31:59,366 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:31:59] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:04,308 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:04] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:04,358 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:04] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:04,422 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:04] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:09,394 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:09] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:09,472 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:09] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:09,567 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:09] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:14,359 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:14] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:14,424 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:14] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:14,500 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:14] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:19,341 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:19] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:19,400 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:19] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:19,439 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:19] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:24,306 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:24] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:24,361 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:24] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:24,397 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:24] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:24,718 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:32:29,293 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:29] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:29,326 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:29] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:29,348 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:29] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:30,854 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:32:34,415 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:34] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:34,472 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:34] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:34,505 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:34] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:38,045 - __main__ - INFO - Starting Real-Time Trading Analytics Platform...
+2025-12-16 22:32:38,074 - backend.storage - INFO - Database initialized successfully
+2025-12-16 22:32:38,075 - __main__ - INFO - Database initialized
+2025-12-16 22:32:38,079 - __main__ - INFO - Data ingestion started
+2025-12-16 22:32:38,079 - __main__ - INFO - Starting Flask server on http://localhost:5000
+2025-12-16 22:32:38,081 - backend.data_ingestion - INFO - Connecting to Binance WebSocket: wss://stream.binance.com:9443/stream?streams=btcusdt@trade/ethusdt@trade
+2025-12-16 22:32:38,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.14:5000
+2025-12-16 22:32:38,162 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-16 22:32:39,537 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:32:39,572 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:39] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:39,711 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:39] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:39,821 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:39] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:44,322 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:44] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:44,408 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:44] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:44,474 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:44] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:49,416 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:49] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:49,703 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:49] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:49,768 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:49] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:55,030 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:55] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:55,253 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:55] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:55,339 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:55] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:32:59,706 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:59] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:59,914 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:59] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:32:59,943 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:32:59] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:04,772 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:04] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:04,893 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:04] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:05,098 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:05] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:09,691 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:09] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:09,804 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:09] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:09,910 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:09] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:14,702 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:14] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:14,811 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:14] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:14,859 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:14] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:19,712 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:19] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:19,813 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:19] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:19,866 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:19] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:24,700 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:24] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:24,856 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:24] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:24,904 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:24] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:29,700 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:29] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:29,764 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:29] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:29,887 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:29] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:34,720 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:34] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:34,783 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:34] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:34,822 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:34] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:37,329 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:33:39,687 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:39] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:39,708 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:39] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:39,726 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:39] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:43,179 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:33:44,752 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:44] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:44,827 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:44] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:44,853 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:44] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:44,992 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:33:49,751 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:49] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:49,863 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:49] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:49,941 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:49] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:33:50,925 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:33:56,733 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:56,801 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:33:56,831 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:33:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:34:56,731 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:34:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:34:56,787 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:34:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:34:56,826 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:34:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:34:57,106 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:35:03,202 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:35:03,567 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:35:09,293 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:35:56,729 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:35:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:35:56,844 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:35:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:35:56,898 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:35:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:36:11,764 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:36:14,239 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:36:18,362 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:36:21,516 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:36:56,720 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:36:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:36:56,811 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:36:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:36:56,904 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:36:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:37:24,561 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:37:27,120 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:37:30,659 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:37:33,424 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:37:56,732 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:37:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:37:56,855 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:37:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:37:56,889 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:37:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:38:39,557 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:38:42,139 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:38:46,024 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:38:48,072 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:38:56,823 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:38:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:38:57,023 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:38:57] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:38:57,056 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:38:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:39:56,711 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:39:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:39:56,758 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:39:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:39:56,787 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:39:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:39:57,428 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:39:57,926 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:40:06,307 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:40:06,379 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:40:56,833 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:40:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:40:56,979 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:40:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:40:57,069 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:40:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:41:12,607 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:41:14,523 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:41:18,599 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:41:20,458 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:41:56,752 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:41:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:41:56,941 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:41:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:41:56,999 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:41:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:42:22,549 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:42:24,906 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:42:28,440 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:42:30,888 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:42:56,728 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:42:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:42:56,800 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:42:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:42:56,838 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:42:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:43:33,217 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:43:36,131 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:43:39,160 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:43:41,823 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:43:56,772 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:43:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:43:56,853 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:43:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:43:56,883 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:43:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:44:47,634 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:44:51,434 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:44:53,742 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:44:56,713 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:44:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:44:56,853 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:44:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:44:56,886 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:44:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:44:57,178 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:45:56,725 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:45:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:45:56,792 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:45:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:45:56,833 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:45:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:46:05,109 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:46:06,155 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:46:11,055 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:46:11,954 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:46:56,746 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:46:56] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:46:56,842 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:46:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:46:56,881 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:46:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:47:16,649 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:47:19,385 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:47:22,598 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:47:25,397 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:47:57,317 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:47:57] "GET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:47:57,414 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:47:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:47:57,434 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:47:57] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:47:57,691 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:47:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:48:20,788 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:48:23,144 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:48:27,065 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:48:29,181 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:48:56,896 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:48:56,898 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:48:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:48:57,536 - backend.analytics_engine - ERROR - Error computing pair analytics: HuberRegressor convergence failed: l-BFGS-b solver terminated with ABNORMAL_TERMINATION_IN_LNSRCH
+2025-12-16 22:48:57,540 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:48:57] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:48:57,768 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:48:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:49:29,841 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:49:34,135 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:49:35,955 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:49:40,186 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:49:56,754 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:49:56,760 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:49:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:49:56,963 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:49:56,966 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:49:56] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:49:57,010 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:49:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:50:36,549 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:50:42,822 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:50:43,003 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:50:48,966 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:50:56,772 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:50:56,773 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:50:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:50:56,924 - backend.analytics_engine - ERROR - Error computing pair analytics: HuberRegressor convergence failed: l-BFGS-b solver terminated with ABNORMAL_TERMINATION_IN_LNSRCH
+2025-12-16 22:50:56,926 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:50:56] "GET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1" 200 -
+2025-12-16 22:50:56,979 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:50:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:51:52,383 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:51:56,312 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:51:56,751 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:51:56,754 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:51:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:51:56,884 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:51:56,886 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:51:56] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:51:56,914 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:51:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:51:58,496 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:52:02,475 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:52:56,757 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:52:56,760 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:52:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:52:57,217 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:52:57,220 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:52:57] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:52:57,309 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:52:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:53:08,023 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:53:10,066 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:53:14,271 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:53:16,116 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:53:56,764 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:53:56,767 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:53:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:53:57,051 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:53:57,054 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:53:57] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:53:57,108 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:53:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:54:38,575 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:54:41,082 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:54:44,999 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:54:47,147 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:54:53,212 - __main__ - INFO - Client disconnected
+2025-12-16 22:54:53,384 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:54:53] "GET /socket.io/?EIO=4&transport=websocket&sid=YfeSn90WPSpfUB8NAAAC HTTP/1.1" 200 -
+2025-12-16 22:55:12,498 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:12] "GET /socket.io/?EIO=4&transport=polling&t=PieCSXp HTTP/1.1" 200 -
+2025-12-16 22:55:12,456 - backend.storage - ERROR - Error updating OHLC for 5m: database is locked
+2025-12-16 22:55:13,553 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:55:13,554 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:13] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:55:14,201 - __main__ - INFO - Client connected
+2025-12-16 22:55:14,237 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:14] "POST /socket.io/?EIO=4&transport=polling&t=PieCTT2&sid=CDc04NtozWl18IuWAAAE HTTP/1.1" 200 -
+2025-12-16 22:55:14,252 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:14] "GET /socket.io/?EIO=4&transport=polling&t=PieCTT6&sid=CDc04NtozWl18IuWAAAE HTTP/1.1" 200 -
+2025-12-16 22:55:14,397 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:14] "GET /socket.io/?EIO=4&transport=polling&t=PieCTeL&sid=CDc04NtozWl18IuWAAAE HTTP/1.1" 200 -
+2025-12-16 22:55:15,043 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:55:15,046 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:15] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:55:15,292 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:15] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:55:54,599 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:55:56,468 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:55:56,684 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:55:56,686 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:55:56,746 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:55:56,747 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:56] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:55:56,761 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:55:56] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:56:00,616 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:56:02,302 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:56:56,775 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:56:56,780 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:56:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:56:56,996 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:56:57,000 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:56:56] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:56:57,039 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:56:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:57:06,002 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:57:08,044 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:57:12,303 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:57:13,941 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:57:56,771 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:57:56,774 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:57:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:57:57,123 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:57:57,129 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:57:57] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:57:57,192 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:57:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:58:14,346 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:58:19,544 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:58:20,896 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:58:25,414 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:58:56,742 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:58:56,745 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:58:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:58:57,186 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:58:57,188 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:58:57] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:58:57,229 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:58:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
+2025-12-16 22:59:27,460 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:59:33,192 - backend.data_ingestion - WARNING - WebSocket connection closed, reconnecting...
+2025-12-16 22:59:33,826 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:59:39,045 - backend.data_ingestion - INFO - WebSocket connected successfully
+2025-12-16 22:59:56,805 - __main__ - ERROR - Error computing analytics for BTCUSDT: Object of type bool_ is not JSON serializable
+2025-12-16 22:59:56,808 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:59:56] "[35m[1mGET /api/analytics/BTCUSDT?timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:59:57,111 - __main__ - ERROR - Error computing pair analytics: Object of type bool_ is not JSON serializable
+2025-12-16 22:59:57,117 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:59:57] "[35m[1mGET /api/pair_analytics?symbol1=BTCUSDT&symbol2=ETHUSDT&timeframe=1m&window=20 HTTP/1.1[0m" 500 -
+2025-12-16 22:59:57,150 - werkzeug - INFO - 127.0.0.1 - - [16/Dec/2025 22:59:57] "GET /api/ohlc/BTCUSDT?timeframe=1m&limit=100 HTTP/1.1" 200 -
